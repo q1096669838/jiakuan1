@@ -5,20 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 185.193.29.123
-  port: 443
+  server: 162.159.43.187
+  port: 2086
   udp: true
   type: vless
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  tls: true
-  servername: notls.lukongtou.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /Telegram-WangCai2🇨🇳
+    path: /?ed=2560security=tls
     headers:
-      Host: notls.lukongtou.eu.org
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
