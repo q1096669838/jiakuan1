@@ -30,7 +30,7 @@ proxies:
   grpc-opts:
     grpc-service-name: ''
 - name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
-  server: preview.netraidly.ru
+  server: 5.253.42.163
   port: 40443
   udp: true
   type: vless
@@ -41,7 +41,7 @@ proxies:
     public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
     short-id: 84fc
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
