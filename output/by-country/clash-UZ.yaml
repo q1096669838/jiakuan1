@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 172.67.178.166
+- name: 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe
+  server: 104.25.155.45
   port: 443
   udp: true
   type: vless
-  uuid: 7700ff6d-cefb-4768-a806-ec4f63fe3b38
+  uuid: 50414e45-4c5f-5a45-5553-4eef5adc237a
   tls: true
-  servername: 7-m13.2243867c-5Fee-4b94-803F-85790942D471.Kdns.Fr
+  servername: r5zenrelur2s.pqzdileiu8es.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ED3ZQPu7lqyeDGD58KabZ
+    path: /stream/PANEL_ZEUS/4eef5adc237a/loc-1
     headers:
-      Host: 7-M13.2243867C-5Fee-4b94-803F-85790942D471.KDNS.fR
+      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe
 rules:
 - MATCH,PROXIES
