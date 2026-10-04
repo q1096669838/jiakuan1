@@ -4,16 +4,11 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
-      "server": "7017cade-tmm5c0-u1dz9j-12hj8.nw4.hyhuawei.com",
-      "server_port": 443,
-      "password": "5acc7a7c-d7ea-11eb-8673-f23c9164ca5d",
-      "tls": {
-        "enabled": true,
-        "server_name": "7017cade-tmm5c0-u1dz9j-12hj8.nw4.hyhuawei.com",
-        "insecure": true
-      }
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe",
+      "server": "tutaim.azad0namah.ir",
+      "server_port": 8080,
+      "uuid": "fdc1206a-9d2e-42b7-b615-9ccea8cf70ee"
     },
     {
       "type": "vless",
@@ -28,7 +23,10 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/e8e2cecb6188f7fb"
+        "path": "/e8e2cecb6188f7fb",
+        "headers": {
+          "Host": "argo6.5671234.xyz"
+        }
       }
     },
     {
@@ -36,7 +34,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe"
       ]
     },
@@ -44,7 +42,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"

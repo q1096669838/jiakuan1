@@ -4,14 +4,12 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  server: 7017cade-tmm5c0-u1dz9j-12hj8.nw4.hyhuawei.com
-  port: 443
+- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
+  server: tutaim.azad0namah.ir
+  port: 8080
   udp: true
-  type: hysteria2
-  password: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
-  sni: 7017cade-tmm5c0-u1dz9j-12hj8.nw4.hyhuawei.com
-  skip-cert-verify: true
+  type: vless
+  uuid: fdc1206a-9d2e-42b7-b615-9ccea8cf70ee
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   server: argo6.5671234.xyz
   port: 443
@@ -24,19 +22,21 @@ proxies:
   network: ws
   ws-opts:
     path: /e8e2cecb6188f7fb
+    headers:
+      Host: argo6.5671234.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
