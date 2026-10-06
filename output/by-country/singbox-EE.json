@@ -32,10 +32,7 @@
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "estproxy4.lockdwn.com"
-        }
+        "path": "/"
       }
     },
     {
@@ -63,14 +60,7 @@
       "tls": {
         "enabled": true,
         "server_name": "fdghyt.com",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
