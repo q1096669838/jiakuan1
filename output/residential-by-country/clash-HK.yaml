@@ -19,7 +19,7 @@ proxies:
     headers:
       Host: mswo-gy191m.zhiyuantech.cloud
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  server: t4.qifei.app
+  server: 42.200.173.5
   port: 443
   udp: true
   type: vless
@@ -28,6 +28,7 @@ proxies:
   tls: true
   reality-opts:
     public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
   servername: s3.ap-east-1.amazonaws.com
   client-fingerprint: random
 proxy-groups:
