@@ -63,13 +63,59 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
+      "server": "sub.merky.top",
+      "server_port": 443,
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "tls": {
+        "enabled": true,
+        "server_name": "sub.merky.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/merky-connect/de6/",
+        "headers": {
+          "Host": "sub.merky.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
+      "server": "swe.wizard.select",
+      "server_port": 443,
+      "uuid": "3db6eb7e-c548-11f1-9902-a337233c6cda",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "swe.wizard.select",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0",
+          "short_id": "3b20e438da99"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 03 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 05 - xiaohe"
       ]
     },
     {
@@ -78,7 +124,9 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 03 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
