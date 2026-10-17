@@ -5,27 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 01 - xiaohe",
-      "server": "vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev",
+      "tag": "🇻🇳 越南 (Vietnam) 01 - xiaohe",
+      "server": "150.95.109.109",
       "server_port": 2086,
-      "uuid": "73796e63-0000-4000-8000-000000000007",
-      "transport": {
-        "type": "ws"
-      }
+      "uuid": "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
