@@ -4,22 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
-      "server": "104.21.23.80",
-      "server_port": 443,
-      "uuid": "f5f0babe-aea2-4f07-a1fc-3c9820253f49",
-      "security": "auto",
+      "type": "vless",
+      "tag": "🇰🇭 柬埔寨 (Cambodia) 01 - xiaohe",
+      "server": "nl5.hap-plus.ru",
+      "server_port": 8443,
+      "uuid": "05d7a479-a099-40cf-aecf-41aa934767b0",
       "tls": {
         "enabled": true,
-        "server_name": "my.lovehk.xyz",
-        "insecure": false
+        "server_name": "nl5.hap-plus.ru",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/KualaLumpur1",
+        "path": "/api/v1/events",
         "headers": {
-          "Host": "my.lovehk.xyz"
+          "Host": "nl5.hap-plus.ru"
         }
       }
     },
@@ -28,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
+        "🇰🇭 柬埔寨 (Cambodia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
+        "🇰🇭 柬埔寨 (Cambodia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
