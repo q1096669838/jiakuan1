@@ -4,14 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.21.37.56",
-      "server_port": 443,
-      "password": "humanity",
+      "type": "vless",
+      "tag": "🇰🇭 柬埔寨 (Cambodia) 01 - xiaohe",
+      "server": "93.152.215.176",
+      "server_port": 8443,
+      "uuid": "05d7a479-a099-40cf-aecf-41aa934767b0",
       "tls": {
         "enabled": true,
-        "server_name": "www.volumeroot.com",
+        "server_name": "nl5.hap-plus.ru",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/api/v1/events",
         "headers": {
-          "Host": "www.volumeroot.com"
+          "Host": "nl5.hap-plus.ru"
         }
       }
     },
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇰🇭 柬埔寨 (Cambodia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇰🇭 柬埔寨 (Cambodia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
