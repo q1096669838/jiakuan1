@@ -4,23 +4,27 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇻🇳 越南 (Vietnam) 01 - xiaohe",
-      "server": "funagfrdfs.alixxplay.com",
-      "server_port": 55688,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-      "flow": "xtls-rprx-vision",
+      "type": "trojan",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "password": "mitivpn",
       "tls": {
         "enabled": true,
-        "server_name": "bilibili-vn.biliimg.com",
+        "server_name": "d-e.mitivpn.in.net",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "KeV1nArisy7FO5DjqTSmn0hBnlNd38rzhbIMMpe-MBw",
-          "short_id": "a46bb5972cf50671"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "d-e.mitivpn.in.net"
         }
       }
     },
@@ -29,14 +33,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
