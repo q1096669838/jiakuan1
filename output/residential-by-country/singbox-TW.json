@@ -36,8 +36,7 @@
         "insecure": false
       },
       "transport": {
-        "type": "ws",
-        "path": "/"
+        "type": "ws"
       }
     },
     {
