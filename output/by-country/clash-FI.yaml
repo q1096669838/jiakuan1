@@ -30,19 +30,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ''
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: webdisk.jaggyslawa.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8cc7d0fc-1b83-4ee3-b51d-8a03a9b19435
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: 87174b37ce3b
-  servername: www.microsoft.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 rules:
 - MATCH,PROXIES
