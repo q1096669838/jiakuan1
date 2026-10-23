@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe",
-      "server": "104.24.31.89",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+      "server": "194.116.236.113",
       "server_port": 443,
-      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
+      "uuid": "9c794bb7-54fe-4acd-844a-a26209af36c3",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
-        "insecure": false,
+        "server_name": "api.mskvibe.fyi",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "rayan-007.nastaran.dpdns.org"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ",
+          "short_id": "7271129440ade8fa"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
