@@ -1,0 +1,48 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇿 捷克 (Czech) 01 - xiaohe
+  server: cz-prg.dontblockmepls.com
+  port: 2063
+  udp: true
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: firefox
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: wwww.qarvian.ir
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5b5a8a8e-d9ca-4787-ab69-4c76fac089ae
+  tls: true
+  servername: firefox.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: albaniji.global.ssl.fastly.net.
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 02 - xiaohe
+rules:
+- MATCH,PROXIES

@@ -1,0 +1,76 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
+      "server": "cz-prg.dontblockmepls.com",
+      "server_port": 2063,
+      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "rusbid.de",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
+      "server": "wwww.qarvian.ir",
+      "server_port": 443,
+      "uuid": "5b5a8a8e-d9ca-4787-ab69-4c76fac089ae",
+      "tls": {
+        "enabled": true,
+        "server_name": "firefox.com",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "albaniji.global.ssl.fastly.net."
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇿 捷克 (Czech) 01 - xiaohe",
+        "🇨🇿 捷克 (Czech) 02 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇿 捷克 (Czech) 01 - xiaohe",
+        "🇨🇿 捷克 (Czech) 02 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
