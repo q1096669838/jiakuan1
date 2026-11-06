@@ -5,24 +5,17 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.21.58.37",
-      "server_port": 2053,
-      "uuid": "e3149c82-00f6-4227-b2c0-b78f1dd81279",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
+      "server": "130.94.95.198",
+      "server_port": 57353,
+      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
       "tls": {
         "enabled": true,
-        "server_name": "fast.145779.xyz",
-        "insecure": false,
+        "server_name": "in001.zestapp778.com",
+        "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-tesla",
-        "headers": {
-          "Host": "fast.145779.xyz"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -31,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
