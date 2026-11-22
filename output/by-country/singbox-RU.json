@@ -15,7 +15,7 @@
         "server_name": "apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -67,57 +67,66 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 04 - xiaohe",
-      "server": "147.45.175.81",
+      "server": "136.148.83.69",
       "server_port": 443,
-      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
+      "uuid": "7dff1be7-b930-0001-a8ad-dc7850168215",
       "tls": {
         "enabled": true,
-        "server_name": "xsru2.freeddns.org",
+        "server_name": "szqbx-ru-77dc.my-fade.cloud",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/wsru",
-        "headers": {
-          "Host": "xsru2.freeddns.org"
+          "fingerprint": "chrome"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 05 - xiaohe",
-      "server": "168.113.252.11",
+      "server": "147.45.175.81",
       "server_port": 443,
-      "uuid": "8973e4a5-1c15-0001-abc7-60fb180063ea",
+      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
       "tls": {
         "enabled": true,
-        "server_name": "jkawq-ru-45sb.fade.mom",
+        "server_name": "xssite.webredirect.org",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-ru"
       }
     },
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 06 - xiaohe",
-      "server": "147.45.221.225",
+      "server": "xssite.webredirect.org",
       "server_port": 443,
-      "uuid": "58e22afd-bf74-4736-984d-63a8ca03d7f0",
+      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
       "tls": {
         "enabled": true,
-        "server_name": "nl.lucheeebezlimitnoekino.stream",
-        "insecure": false
+        "server_name": "xssite.webredirect.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
       },
       "transport": {
-        "type": "ws",
-        "path": "/media/ws/"
+        "type": "grpc",
+        "service_name": "grpc-ru"
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - xiaohe",
+      "server": "90.156.203.62",
+      "server_port": 5112,
+      "method": "chacha20-ietf-poly1305",
+      "password": "VVlAff77CnAU43Aoc5j15Y"
     },
     {
       "type": "selector",
@@ -129,7 +138,8 @@
         "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
         "🇷🇺 俄罗斯 (Russia) 04 - xiaohe",
         "🇷🇺 俄罗斯 (Russia) 05 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 06 - xiaohe"
+        "🇷🇺 俄罗斯 (Russia) 06 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 07 - xiaohe"
       ]
     },
     {
@@ -141,7 +151,8 @@
         "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
         "🇷🇺 俄罗斯 (Russia) 04 - xiaohe",
         "🇷🇺 俄罗斯 (Russia) 05 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 06 - xiaohe"
+        "🇷🇺 俄罗斯 (Russia) 06 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 07 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
