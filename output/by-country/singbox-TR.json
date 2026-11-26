@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "143.246.136.128",
+      "server": "turkey-ip1.mmdaqaorg.xyz",
       "server_port": 50738,
       "uuid": "56665684-5ac0-4ba9-9d49-8b258fb57974",
       "tls": {
@@ -26,26 +26,22 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
-      "server": "172.64.155.209",
+      "server": "18.172.170.80",
       "server_port": 443,
-      "uuid": "14eccb4f-ca88-4732-b191-d8daacf63448",
+      "uuid": "963A4918-A630-29DA-A873-093CDF8AD784",
       "tls": {
         "enabled": true,
-        "server_name": "sinavm3.soft10.ir",
+        "server_name": "deldgy5xz81zm.cloudfront.net",
         "insecure": false,
         "alpn": [
           "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
+        "path": "/",
         "headers": {
-          "Host": "sinavm3.soft10.ir"
+          "Host": "deldgy5xz81zm.cloudfront.net"
         }
       }
     },

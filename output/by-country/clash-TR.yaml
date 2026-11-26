@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 143.246.136.128
+  server: turkey-ip1.mmdaqaorg.xyz
   port: 50738
   udp: true
   type: vless
@@ -15,20 +15,19 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 172.64.155.209
+  server: 18.172.170.80
   port: 443
   udp: true
   type: vless
-  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
   tls: true
-  servername: sinavm3.soft10.ir
+  servername: deldgy5xz81zm.cloudfront.net
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    path: /
     headers:
-      Host: sinavm3.soft10.ir
+      Host: deldgy5xz81zm.cloudfront.net
 proxy-groups:
 - name: PROXIES
   type: select
