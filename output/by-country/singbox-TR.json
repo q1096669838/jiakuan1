@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "turkey-ip1.mmdaqaorg.xyz",
+      "server": "leviko-tr3795.shopingggg.ir",
       "server_port": 50738,
       "uuid": "56665684-5ac0-4ba9-9d49-8b258fb57974",
       "tls": {
@@ -26,22 +26,14 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
-      "server": "18.172.170.80",
-      "server_port": 443,
-      "uuid": "963A4918-A630-29DA-A873-093CDF8AD784",
-      "tls": {
-        "enabled": true,
-        "server_name": "deldgy5xz81zm.cloudfront.net",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
-      },
+      "server": "v2new.nimbaha9.ir",
+      "server_port": 8080,
+      "uuid": "f279c19a-b324-40cf-af57-049f9b1b68f2",
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/XDS45",
         "headers": {
-          "Host": "deldgy5xz81zm.cloudfront.net"
+          "Host": "v2new.nimbaha9.ir"
         }
       }
     },

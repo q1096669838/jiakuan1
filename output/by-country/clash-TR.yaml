@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: turkey-ip1.mmdaqaorg.xyz
+  server: leviko-tr3795.shopingggg.ir
   port: 50738
   udp: true
   type: vless
@@ -15,19 +15,16 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 18.172.170.80
-  port: 443
+  server: v2new.nimbaha9.ir
+  port: 8080
   udp: true
   type: vless
-  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
-  tls: true
-  servername: deldgy5xz81zm.cloudfront.net
-  skip-cert-verify: false
+  uuid: f279c19a-b324-40cf-af57-049f9b1b68f2
   network: ws
   ws-opts:
-    path: /
+    path: /XDS45
     headers:
-      Host: deldgy5xz81zm.cloudfront.net
+      Host: v2new.nimbaha9.ir
 proxy-groups:
 - name: PROXIES
   type: select
